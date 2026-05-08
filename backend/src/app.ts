@@ -12,9 +12,9 @@ const app = express();
 app.use(helmet());
 app.use(
   cors({
-    origin: env.clientUrl,
-    credentials: true
-  })
+    origin: "*",
+    credentials: true,
+  }),
 );
 app.use(express.json());
 
